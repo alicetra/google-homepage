@@ -3,46 +3,104 @@
 <title>google page</title>
 <head>
   <style>
+body {
+  overflow-x: hidden;
+  margin: 0 auto;
 
-  #logo{
-    position: relative;
-    top: 115px;
-    left: 40%;
+}
+ #logo{
+   position: relative;
+  margin-top: 115px;
+  margin-left: 40%;
   }
- 
  #searchbar {
    position:relative;
-   top: 120px;
-   left:30%;
+   margin-left:30%;
  }
-
  .search{
    width: 500px;
    height: 35px;
    border-radius: 20px;
    border: 1px solid lightgrey;
+   outline:none;
  }
-
-
-        
+#button {
+  position:relative;
+  margin-top: 10px;
+  margin-left:40%;
+}
+.button1 {
+  height: 30px;
+  color:grey;
+  }
+.button2 {
+  height:30px;
+  color: grey;
+}
+.search:hover {
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px lightgrey;
+}
+.button1:hover {
+  box-shadow: inset 0px 0px 15px white;
+  font-weight: bold;
+}
+.button2:hover {
+  box-shadow: inset 0px 0px 15px white;
+  font-weight: bold;
+}
+ a {
+   color:black;
+   text-decoration: none;
+    }
+ a:hover{
+   text-decoration: underline;
+ }
+.gmail {
+  position: relative;
+  margin-left: 78%;
+}
+.image {
+  position: relative;
+  margin-left: 79%;
+}
+.sign-in {
+  position:relative;
+  margin-left: 80%;
+  color: white;
+  background-color:#6495ED;
+  font-weight: bold;
+  height:30px;
+}
+  .store {
+  position: relative;
+  margin-left: 1%;
+  }
   </style>
   </head>
-
   <body>
-  
+
+  <div id="navigation">
+  <a class="about" href="_blank">About</a>
+  <a class="store" href="_blank">Store</a>
+  <a class="gmail" href="_blank">Gmail</a>
+  <a class="image" href="_blank">Image</a>
+  <button class="sign-in" type="submit">Sign In</button>
+  </div>
   <div id="logo">
   <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo.">
   </div>
-    
   <div id="searchbar">
-  <input class="search" type="text" placeholder="Search">
+  <input class="search" type="text" placeholder="Search" autofocus="autofocus" >
   </div>
-  
-  <div id="button">
-  <button type="submit">Google Search</button>
-  <button type="submit">I'm feeling lucky</button>
-  </div>
+ <div id="button">
+ <button class="button1" type="submit">Google Search</button>
+ <button class="button2" type="submit">I'm feeling lucky</button>
+ </div>
+
+ <div id=footer>
+ </div>
+</div>
 
 </body>
   </html>
-  
