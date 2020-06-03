@@ -1,0 +1,1 @@
+Recreating the google page visually with HTML and CSS. I tried to make sure the page will look good in different resolutions full screen.

@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html>
-<title>google page</title>
+<title>google page layout</title>
 <head>
   <style>
 body { 
 	margin: 0 auto !important; 
-	width: 100%;
-
-
 }
 
  #logo-search{
@@ -17,7 +14,6 @@ body {
     left: 50%;
     margin-left:-253px;
     margin-top: 20vh;
-
   }
 
  .logo{
@@ -49,12 +45,10 @@ body {
    outline:none;
  }
 
-
 .button1 {
   height: 30px;
   color:grey;
   }
-  
 
 .button2 {
   height:30px;
@@ -72,37 +66,73 @@ body {
   box-shadow: inset 0px 0px 15px white;
   font-weight: bold;
 }
-
  a {
-   color:black;
+   color:grey;
    text-decoration: none;
     }
-
  a:hover{
    text-decoration: underline;
  }
-
-
  .sign-in{
   color: white;
   background-color:#6495ED;
   font-weight: bold;
+  border: none;
   height:30px;
   }
-
   #navigation1 {
     position: absolute;
     margin-top: 1vh;
     margin-left: 1vw;
     display:inline-block;
   }
-
   #navigation2{
     position: absolute;
     margin-top: 1vh;
     margin-left: 90vw;
     display:inline-block;
   }
+
+  #footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #DCDCDC;
+    height: 5vh;
+    font-size: 16px;
+    display: inline-block;
+  }
+  
+  .settings {
+    position: absolute;
+    margin-left: 93vw;
+  }
+
+  .terms {
+    position: absolute;
+    margin-left: 87vw;
+  }
+
+  .privacy{
+    position: absolute;
+    margin-left: 80vw;
+  }
+
+  .hsw{
+    position: absolute;
+    margin-left: 16vw;
+}
+
+  .business{
+    position: absolute;
+    margin-left: 10vw;
+}
+
+  .advertising{
+    position: absolute;
+    margin-left: 1vw;
+}
+
 
     @media (max-width: 1500px) {
       #navigation2 {
@@ -112,7 +142,6 @@ body {
         margin-left: 85vw;
       }
     }
-    
     @media (max-width: 990px) {
       #navigation2 {
         position: absolute;
@@ -121,7 +150,7 @@ body {
         margin-left: 80vw;
       }
     }
-
+  
   </style>
   </head>
   <body>
@@ -143,9 +172,14 @@ body {
  <button class="button2" type="submit">I'm feeling lucky</button>
  </div>
 
- <div id=footer>
+ <div id="footer">
+  <a class="advertising" href="_blank">Advertising</a>
+  <a class="business" href="_blank">Busines</a>
+  <a class="hsw" href="_blank">How Search Works</a>
+  <a class="privacy" href="_blank">Privacy</a>
+  <a class="terms" href="_blank">Terms</a>
+  <a class="settings" href="_blank">Settings</a>
  </div>
-</div>
 
 </body>
   </html>
