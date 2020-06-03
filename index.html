@@ -3,20 +3,44 @@
 <title>google page</title>
 <head>
   <style>
-body {
-  overflow-x: hidden;
-  margin: 0 auto;
+body { 
+	margin: 0 auto !important; 
+	width: 100%;
+
 
 }
- #logo{
-   position: relative;
-  margin-top: 115px;
-  margin-left: 40%;
+
+ #logo-search{
+    display: inline-block;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    margin-left:-253px;
+    margin-top: 20vh;
+
   }
- #searchbar {
-   position:relative;
-   margin-left:30%;
+
+ .logo{
+  width: 272px;
+  height: 92px;
  }
+
+ .search {
+   width: 506px;
+   height:39px;
+  display: block;
+ }
+
+ .button1 {
+   display:inline-block;
+   margin: 10px;
+ }
+
+ .button2 {
+   display:inline-block;
+   margin: 10px;
+ }
+
  .search{
    width: 500px;
    height: 35px;
@@ -24,15 +48,14 @@ body {
    border: 1px solid lightgrey;
    outline:none;
  }
-#button {
-  position:relative;
-  margin-top: 10px;
-  margin-left:40%;
-}
+
+
 .button1 {
   height: 30px;
   color:grey;
   }
+  
+
 .button2 {
   height:30px;
   color: grey;
@@ -49,51 +72,73 @@ body {
   box-shadow: inset 0px 0px 15px white;
   font-weight: bold;
 }
+
  a {
    color:black;
    text-decoration: none;
     }
+
  a:hover{
    text-decoration: underline;
  }
-.gmail {
-  position: relative;
-  margin-left: 78%;
-}
-.image {
-  position: relative;
-  margin-left: 79%;
-}
-.sign-in {
-  position:relative;
-  margin-left: 80%;
+
+
+ .sign-in{
   color: white;
   background-color:#6495ED;
   font-weight: bold;
   height:30px;
-}
-  .store {
-  position: relative;
-  margin-left: 1%;
   }
+
+  #navigation1 {
+    position: absolute;
+    margin-top: 1vh;
+    margin-left: 1vw;
+    display:inline-block;
+  }
+
+  #navigation2{
+    position: absolute;
+    margin-top: 1vh;
+    margin-left: 90vw;
+    display:inline-block;
+  }
+
+    @media (max-width: 1500px) {
+      #navigation2 {
+        position: absolute;
+        margin-top: 1vh;
+        display:inline-block;
+        margin-left: 85vw;
+      }
+    }
+    
+    @media (max-width: 990px) {
+      #navigation2 {
+        position: absolute;
+        margin-top: 1vh;
+        display:inline-block;
+        margin-left: 80vw;
+      }
+    }
+
   </style>
   </head>
   <body>
 
-  <div id="navigation">
+  <div id="navigation1">
   <a class="about" href="_blank">About</a>
   <a class="store" href="_blank">Store</a>
+  </div>
+  <div id="navigation2">
   <a class="gmail" href="_blank">Gmail</a>
   <a class="image" href="_blank">Image</a>
   <button class="sign-in" type="submit">Sign In</button>
   </div>
-  <div id="logo">
-  <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo.">
-  </div>
-  <div id="searchbar">
+
+  <div id="logo-search">
+  <img class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo.">
   <input class="search" type="text" placeholder="Search" autofocus="autofocus" >
-  </div>
- <div id="button">
  <button class="button1" type="submit">Google Search</button>
  <button class="button2" type="submit">I'm feeling lucky</button>
  </div>
